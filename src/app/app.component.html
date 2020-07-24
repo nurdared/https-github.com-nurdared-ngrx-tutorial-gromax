@@ -1,0 +1,9 @@
+<button (click)="increase()">Increase</button>
+<button (click)="decrease()" [disabled]="isButtonDisabled$ | async">
+  Decrease
+</button>
+<button (click)="clear()" [disabled]="isButtonDisabled$ | async">Clear</button>
+
+<h1>Counter is {{ count$ | async }}</h1>
+<h3>Updated at {{ updatedAt$ | async | date: "yyyy/MM/dd hh:mm:ss" }}</h3>
+<h1>Nurdared</h1>
